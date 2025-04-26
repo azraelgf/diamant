@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>О компании</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250426150714">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--	 <style>body{opacity: 0;}</style>-->
+	<style>
+		/* Начальное состояние */
+		body {
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		/* Класс, добавляемый после загрузки */
+		html.loaded body {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top header-top">
+				<div class="header-top__container">
+					<a href="/" class="header-top__logo logo"><img src="img/logo.webp" alt="Logo"></a>
+
+					<div class="header-top__middle">
+						<button class="icon-menu" type="button">
+							<i class="menu__icon icon-menu__btn"><span></span></i>
+							<span class="icon-menu__text">Каталог</span>
+						</button>
+						<div class="search-block">
+							<form action="">
+								<div class="search-block__inner">
+									<input class="search-block__input input" autocomplete="off" type="text" placeholder="Поиск по сайту">
+									<button class="search-block__btn" type="submit">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#search"></use>
+										</svg>
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="header-top__contacts" data-da=".menu__body, 767.98">
+							<a href="tel:+74993940260">+7 499 394 02 60</a>
+							<a href="mailto:anturazh.co@mail.ru">anturazh.co@mail.ru</a>
+						</div>
+					</div>
+
+					<div class="header-top__action action-header-top" data-da=".menu__body, 479.98">
+						<button class="action-header-top__link search-btn-js _hidden" data-da=".header-top__middle, 479.98,first">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#search"></use>
+							</svg>
+						</button>
+						<a href="" class="action-header-top__link">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#calc"></use>
+							</svg>
+						</a>
+						<a href="" class="action-header-top__link">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#mail"></use>
+							</svg>
+						</a>
+						<a href="" class="action-header-top__link">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#wp"></use>
+							</svg>
+						</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="header__menu menu">
+				<div class="menu__container">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item" data-spoilers="767.98">
+								<button class="menu__link btn-catalog" data-spoiler>
+									Каталог
+									<svg>
+										<use xlink:href="img/icons/icons.svg#arrow-sl"></use>
+									</svg>
+								</button>
+								<div class="menu__item-catalog"></div>
+							</li>
+							<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Сертификаты</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Видеоинструкции</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<nav class="catalog-menu" data-da=".menu__item-catalog, 767.98">
+				<div class="catalog-menu__body">
+					<ul class="catalog-menu__list">
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Эпоксидные затирки</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Эпоксидные грунтовки</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Очистители</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Латексные грунтовки</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Эпоксидные клеи</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Инструменты</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Цементные клеи</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Специальные добавки</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main class="page bg-section">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">О компании</span></li>
+					</ul>
+				</div>
+			</nav>
+			<section class="inner-hero section section_bottom">
+				<div class="inner-hero__container">
+					<h1 class="inner-hero__title title">О компании</h1>
+					<div class="about-page">
+						<div class="about-page__img">
+							<img class="ibg" src="img/about/01.webp" alt="Image">
+						</div>
+						<div class="about-page__img">
+							<img class="ibg" src="img/about/02.webp" alt="Image">
+						</div>
+					</div>
+					<div class="text">
+						<p>Компания Diamant — производитель современных материалов для строительства и&nbsp;отделки. Мы вложили
+							весь наш опыт и&nbsp;знания в&nbsp;разработку продукции ТМ Diamant, чтобы обеспечить строительную отрасль
+							высококачественными материалами нового поколения.</p>
+						<p>
+							Сегодня продукция ТМ Diamant успешно реализуется в&nbsp;России, Беларуси, Казахстане и&nbsp;уже завоевала
+							доверие профессионалов строительного рынка.
+						</p>
+						<p>
+							В ассортименте ТМ Diamant представлены: клеевые составы и затирочные смеси на&nbsp;основе эпоксидных
+							смол, цементные клеи, латексные и&nbsp;эпоксидные грунтовки, очистители, инструменты и&nbsp;специальные
+							добавки.
+						</p>
+						<p>
+							Производственные линии завода полностью автоматизированы и&nbsp;оснащены современным оборудованием. В
+							производстве используется высококачественное сырьё от&nbsp;ведущих мировых поставщиков. Контроль
+							качества осуществляется на&nbsp;всех этапах — от приёмки сырья до&nbsp;выпуска готовой продукции.
+						</p>
+						<p>
+							Отапливаемые складские помещения соответствуют всем требованиям и обеспечивают надлежащие
+							условия для хранения сырья и&nbsp;готовой продукции.</p>
+						<p>
+							Эффективно выстроенная система внутренней и&nbsp;внешней логистики позволяет оперативно
+							подготавливать к&nbsp;отгрузке как крупные партии продукции, так и&nbsp;сборные заказы.
+						</p>
+						<p>
+							Для клиентов работает бесплатная линия технической поддержки.
+						</p>
+					</div>
+				</div>
+			</section>
+			<div class="benefits">
+				<div class="benefits__container">
+					<div class="benefits__items">
+						<div class="benefits__item">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#benefit-1"></use>
+							</svg>
+							Передовые
+							технологии
+						</div>
+						<div class="benefits__item">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#benefit-2"></use>
+							</svg>
+							Собственный
+							выпуск
+						</div>
+						<div class="benefits__item">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#benefit-3"></use>
+							</svg>
+							Неповторимые
+							свойства
+						</div>
+						<div class="benefits__item">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#benefit-4"></use>
+							</svg>
+							Опытная
+							поддержка
+						</div>
+						<div class="benefits__item">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#benefit-5"></use>
+							</svg>
+							Доставка по
+							России и&nbsp;СНГ
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__info info-footer">
+					<div class="info-footer__top">
+						<a href="/" class="info-footer__logo logo"><img src="img/logo-f.webp" alt="Logo"></a>
+						<span>ПН-ПТ, с 9:00 до 18:00</span>
+					</div>
+					<div class="info-footer__contacts">
+						<a href="tel:+74993940260">+7 499 394 02 60</a>
+						<a href="mailto:">anturazh.co@mail.ru</a>
+					</div>
+					<div class="info-footer__text">
+						<p>
+							© 2025 DIAMANT затирка
+						</p>
+						<p>
+							Производство и&nbsp;поставки эпоксидных затирок, клеевых смесей
+						</p>
+					</div>
+				</div>
+				<div class="footer__action" data-da=".footer__info, 479.98,1">
+					<ul class="footer-menu">
+						<li class="footer-menu__item"><a href="">Главная</a></li>
+						<li class="footer-menu__item"><a href="">О компании</a></li>
+						<li class="footer-menu__item"><a href="">Сертификаты</a></li>
+						<li class="footer-menu__item"><a href="">Видеоинструкции</a></li>
+						<li class="footer-menu__item"><a href="">Статьи</a></li>
+						<li class="footer-menu__item"><a href="">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20250426150714"></script>
+</body>
+
+</html>

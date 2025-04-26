@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Видеоинструкции</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250426150714">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--	 <style>body{opacity: 0;}</style>-->
+	<style>
+		/* Начальное состояние */
+		body {
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		/* Класс, добавляемый после загрузки */
+		html.loaded body {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top header-top">
+				<div class="header-top__container">
+					<a href="/" class="header-top__logo logo"><img src="img/logo.webp" alt="Logo"></a>
+
+					<div class="header-top__middle">
+						<button class="icon-menu" type="button">
+							<i class="menu__icon icon-menu__btn"><span></span></i>
+							<span class="icon-menu__text">Каталог</span>
+						</button>
+						<div class="search-block">
+							<form action="">
+								<div class="search-block__inner">
+									<input class="search-block__input input" autocomplete="off" type="text" placeholder="Поиск по сайту">
+									<button class="search-block__btn" type="submit">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#search"></use>
+										</svg>
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="header-top__contacts" data-da=".menu__body, 767.98">
+							<a href="tel:+74993940260">+7 499 394 02 60</a>
+							<a href="mailto:anturazh.co@mail.ru">anturazh.co@mail.ru</a>
+						</div>
+					</div>
+
+					<div class="header-top__action action-header-top" data-da=".menu__body, 479.98">
+						<button class="action-header-top__link search-btn-js _hidden" data-da=".header-top__middle, 479.98,first">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#search"></use>
+							</svg>
+						</button>
+						<a href="" class="action-header-top__link">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#calc"></use>
+							</svg>
+						</a>
+						<a href="" class="action-header-top__link">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#mail"></use>
+							</svg>
+						</a>
+						<a href="" class="action-header-top__link">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#wp"></use>
+							</svg>
+						</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="header__menu menu">
+				<div class="menu__container">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item" data-spoilers="767.98">
+								<button class="menu__link btn-catalog" data-spoiler>
+									Каталог
+									<svg>
+										<use xlink:href="img/icons/icons.svg#arrow-sl"></use>
+									</svg>
+								</button>
+								<div class="menu__item-catalog"></div>
+							</li>
+							<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Сертификаты</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Видеоинструкции</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<nav class="catalog-menu" data-da=".menu__item-catalog, 767.98">
+				<div class="catalog-menu__body">
+					<ul class="catalog-menu__list">
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Эпоксидные затирки</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Эпоксидные грунтовки</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Очистители</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Латексные грунтовки</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Эпоксидные клеи</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Инструменты</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Цементные клеи</a></li>
+						<li class="catalog-menu__item"><a class="catalog-menu__link" href="">Специальные добавки</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main class="page bg-section">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">Видеоинструкции</span></li>
+					</ul>
+				</div>
+			</nav>
+			<section class="inner-hero section section_bottom">
+				<div class="inner-hero__container">
+					<h1 class="inner-hero__title title">Видеоинструкции</h1>
+					<div class="video-items">
+						<div class="video-block">
+							<div class="video-block__value">
+								<div class="video-block__inner">
+									<div class="video-block__img">
+										<img class="ibg" src="img/video/01.webp" alt="Image">
+										<button class="video-btn" type="button" data-video-id="acfa9730b7cceb455c9abe1f706f4fd8">
+											<svg viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="41.5" cy="41.5" r="41.5" fill="#E5C20D" />
+												<path d="M53 39.7679C54.3333 40.5378 54.3333 42.4623 53 43.2321L37.25 52.3253C35.9167 53.0951 34.25 52.1329 34.25 50.5933L34.25 32.4067C34.25 30.8671 35.9167 29.9049 37.25 30.6747L53 39.7679Z" fill="black" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="video-block__text">
+									Кто сказал, что эпоксидная затирка Диамант вытекает из швов?
+								</div>
+							</div>
+						</div>
+						<div class="video-block">
+							<div class="video-block__value">
+								<div class="video-block__inner">
+									<div class="video-block__img">
+										<img class="ibg" src="img/video/01.webp" alt="Image">
+										<button class="video-btn" type="button" data-video-id="7c8f443db2db46a2e3c161ad070f4c28">
+											<svg viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="41.5" cy="41.5" r="41.5" fill="#E5C20D" />
+												<path d="M53 39.7679C54.3333 40.5378 54.3333 42.4623 53 43.2321L37.25 52.3253C35.9167 53.0951 34.25 52.1329 34.25 50.5933L34.25 32.4067C34.25 30.8671 35.9167 29.9049 37.25 30.6747L53 39.7679Z" fill="black" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="video-block__text">
+									Как сделать 3д угол на ПЛИТКЕ из Эпоксидного клея. Как смешать цвет.
+								</div>
+							</div>
+						</div>
+						<div class="video-block">
+							<div class="video-block__value">
+								<div class="video-block__inner">
+									<div class="video-block__img">
+										<img class="ibg" src="img/video/01.webp" alt="Image">
+										<button class="video-btn" type="button" data-video-id="2de2732b8894cd1a48ae90fb5c18157e">
+											<svg viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle cx="41.5" cy="41.5" r="41.5" fill="#E5C20D" />
+												<path d="M53 39.7679C54.3333 40.5378 54.3333 42.4623 53 43.2321L37.25 52.3253C35.9167 53.0951 34.25 52.1329 34.25 50.5933L34.25 32.4067C34.25 30.8671 35.9167 29.9049 37.25 30.6747L53 39.7679Z" fill="black" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="video-block__text">
+									“Diamant STAR LVL92 EPOXYFILL” Эпоксидный ремонтный состав
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__info info-footer">
+					<div class="info-footer__top">
+						<a href="/" class="info-footer__logo logo"><img src="img/logo-f.webp" alt="Logo"></a>
+						<span>ПН-ПТ, с 9:00 до 18:00</span>
+					</div>
+					<div class="info-footer__contacts">
+						<a href="tel:+74993940260">+7 499 394 02 60</a>
+						<a href="mailto:">anturazh.co@mail.ru</a>
+					</div>
+					<div class="info-footer__text">
+						<p>
+							© 2025 DIAMANT затирка
+						</p>
+						<p>
+							Производство и&nbsp;поставки эпоксидных затирок, клеевых смесей
+						</p>
+					</div>
+				</div>
+				<div class="footer__action" data-da=".footer__info, 479.98,1">
+					<ul class="footer-menu">
+						<li class="footer-menu__item"><a href="">Главная</a></li>
+						<li class="footer-menu__item"><a href="">О компании</a></li>
+						<li class="footer-menu__item"><a href="">Сертификаты</a></li>
+						<li class="footer-menu__item"><a href="">Видеоинструкции</a></li>
+						<li class="footer-menu__item"><a href="">Статьи</a></li>
+						<li class="footer-menu__item"><a href="">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20250426150714"></script>
+</body>
+
+</html>
