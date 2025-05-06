@@ -355,7 +355,8 @@ textarea.input {
   position: relative;
   border-radius: 1.25rem;
   border: 3px solid var(--accent);
-  overflow: hidden
+  overflow: hidden;
+  width: 100%
 }
 .video-block__img::before {
   content: "";
@@ -419,6 +420,84 @@ textarea.input {
 .pagging__item._active {
   color: var(--primary);
   background-color: var(--accent)
+}
+body::after {
+  content: "";
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .8s ease 0s;
+  pointer-events: none;
+  z-index: 149
+}
+.popup-show body::after {
+  opacity: 1
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 30px 10px;
+  transition: visibility .8s ease 0s;
+  visibility: hidden;
+  pointer-events: none
+}
+.popup_show {
+  z-index: 150;
+  visibility: visible;
+  overflow: auto;
+  pointer-events: auto
+}
+.popup_show .popup__content {
+  visibility: visible;
+  -webkit-transform: scale(1);
+  transform: scale(1)
+}
+.popup__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  flex: 1 1 auto;
+  width: 100%;
+  justify-content: center
+}
+.popup__content {
+  visibility: hidden;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  transition: -webkit-transform .3s ease 0s;
+  transition: transform .3s ease 0s;
+  transition: transform .3s ease 0s,-webkit-transform .3s ease 0s;
+  background-color: var(--bg-primary);
+  width: 100%;
+  max-width: 1024px;
+  border-radius: 20px;
+  padding-top: 3.75rem
+}
+.lock .popup__content {
+  visibility: visible
+}
+.popup__close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem
+}
+.video-popup__text {
+  color: var(--white);
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.33
+}
+.video-popup__iframe {
+  width: 100%;
+  border-radius: 1.25rem
 }
 .spollers {
   display: grid
@@ -2730,6 +2809,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .pagging__item {
     height: 3.75rem
   }
+  .popup__content {
+    padding-bottom: 3.75rem
+  }
+  .popup__content {
+    padding-left: 5rem
+  }
+  .popup__content {
+    padding-right: 5rem
+  }
+  .video-popup__text {
+    margin-bottom: 1.875rem
+  }
+  .video-popup__text {
+    font-size: 1.5625rem
+  }
+  .video-popup__iframe {
+    height: 30.3125rem
+  }
   .spollers {
     gap: 1.25rem
   }
@@ -3152,6 +3249,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .pagging__item {
     height: 3rem
   }
+  .popup__content {
+    padding-bottom: 2.5rem
+  }
+  .popup__content {
+    padding-left: .75rem
+  }
+  .popup__content {
+    padding-right: .75rem
+  }
+  .video-popup__text {
+    margin-bottom: 1.25rem
+  }
+  .video-popup__text {
+    font-size: 1rem
+  }
+  .video-popup__iframe {
+    height: 11.875rem
+  }
   .spollers {
     gap: 1rem
   }
@@ -3399,6 +3514,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .pagging__item {
     height: clamp(3rem ,2.73rem + 1.2vw ,3.75rem)
+  }
+  .popup__content {
+    padding-bottom: clamp(2.5rem ,2.05rem + 2vw ,3.75rem)
+  }
+  .popup__content {
+    padding-left: clamp(.75rem ,-.78rem + 6.8vw ,5rem)
+  }
+  .popup__content {
+    padding-right: clamp(.75rem ,-.78rem + 6.8vw ,5rem)
+  }
+  .video-popup__text {
+    margin-bottom: clamp(1.25rem ,1.025rem + 1vw ,1.875rem)
+  }
+  .video-popup__text {
+    font-size: clamp(1rem ,.7975rem + .9vw ,1.5625rem)
+  }
+  .video-popup__iframe {
+    height: clamp(11.875rem ,5.2375rem + 29.5vw ,30.3125rem)
   }
   .spollers {
     gap: clamp(1rem ,.91rem + .4vw ,1.25rem)

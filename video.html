@@ -5,7 +5,7 @@
 	<title>Видеоинструкции</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250426150714">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250506165316">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -131,12 +131,12 @@
 				<div class="inner-hero__container">
 					<h1 class="inner-hero__title title">Видеоинструкции</h1>
 					<div class="video-items">
-						<div class="video-block">
+						<div class="video-block" data-gallery-video>
 							<div class="video-block__value">
 								<div class="video-block__inner">
 									<div class="video-block__img">
 										<img class="ibg" src="img/video/01.webp" alt="Image">
-										<button class="video-btn" type="button" data-video-id="acfa9730b7cceb455c9abe1f706f4fd8">
+										<button class="video-btn" type="button" data-popup-video="acfa9730b7cceb455c9abe1f706f4fd8" data-popup="#video-1">
 											<svg viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<circle cx="41.5" cy="41.5" r="41.5" fill="#E5C20D" />
 												<path d="M53 39.7679C54.3333 40.5378 54.3333 42.4623 53 43.2321L37.25 52.3253C35.9167 53.0951 34.25 52.1329 34.25 50.5933L34.25 32.4067C34.25 30.8671 35.9167 29.9049 37.25 30.6747L53 39.7679Z" fill="black" />
@@ -154,7 +154,7 @@
 								<div class="video-block__inner">
 									<div class="video-block__img">
 										<img class="ibg" src="img/video/01.webp" alt="Image">
-										<button class="video-btn" type="button" data-video-id="7c8f443db2db46a2e3c161ad070f4c28">
+										<button class="video-btn" type="button" data-popup-video="7c8f443db2db46a2e3c161ad070f4c28" data-popup="#video-2">
 											<svg viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<circle cx="41.5" cy="41.5" r="41.5" fill="#E5C20D" />
 												<path d="M53 39.7679C54.3333 40.5378 54.3333 42.4623 53 43.2321L37.25 52.3253C35.9167 53.0951 34.25 52.1329 34.25 50.5933L34.25 32.4067C34.25 30.8671 35.9167 29.9049 37.25 30.6747L53 39.7679Z" fill="black" />
@@ -172,7 +172,7 @@
 								<div class="video-block__inner">
 									<div class="video-block__img">
 										<img class="ibg" src="img/video/01.webp" alt="Image">
-										<button class="video-btn" type="button" data-video-id="2de2732b8894cd1a48ae90fb5c18157e">
+										<button class="video-btn" type="button" data-popup-video="2de2732b8894cd1a48ae90fb5c18157e" data-popup="#video-3">
 											<svg viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<circle cx="41.5" cy="41.5" r="41.5" fill="#E5C20D" />
 												<path d="M53 39.7679C54.3333 40.5378 54.3333 42.4623 53 43.2321L37.25 52.3253C35.9167 53.0951 34.25 52.1329 34.25 50.5933L34.25 32.4067C34.25 30.8671 35.9167 29.9049 37.25 30.6747L53 39.7679Z" fill="black" />
@@ -223,8 +223,69 @@
 			</div>
 		</footer>
 
+		<div id="video-1" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.85" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="0.85" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__text">
+						<div class="video-popup">
+							<div class="video-popup__text">
+								Кто сказал, что эпоксидная затирка Диамант вытекает из швов?
+							</div>
+							<div class="video-popup__iframe" data-popup-video-place></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="video-2" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.85" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="0.85" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__text">
+						<div class="video-popup">
+							<div class="video-popup__text">
+								Как сделать 3д угол на ПЛИТКЕ из Эпоксидного клея. Как смешать цвет.
+							</div>
+							<div class="video-popup__iframe" data-popup-video-place></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="video-3" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.85" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="0.85" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__text">
+						<div class="video-popup">
+							<div class="video-popup__text">
+								“Diamant STAR LVL92 EPOXYFILL” Эпоксидный ремонтный состав
+							</div>
+							<div class="video-popup__iframe" data-popup-video-place></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
-	<script src="js/app.min.js?_v=20250426150714"></script>
+	<script src="js/app.min.js?_v=20250506165316"></script>
 </body>
 
 </html>
