@@ -598,7 +598,7 @@
         }
         _loadYouTube() {
             const rutubeCode = this.youTubeCode;
-            const urlVideo = `https://rutube.ru/play/embed/${rutubeCode}?autoStart=true`;
+            const urlVideo = `${rutubeCode}`;
             const iframe = document.createElement("iframe");
             iframe.setAttribute("allowfullscreen", "");
             iframe.setAttribute("allow", "autoplay; encrypted-media");
